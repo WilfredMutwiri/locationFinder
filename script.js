@@ -1,3 +1,4 @@
+
 const findMyState=()=>{
     const status=document.querySelector(".status");
     const error=()=>{
@@ -17,4 +18,9 @@ const findMyState=()=>{
     }
     navigator.geolocation.getCurrentPosition(success,error)
 }
-document.querySelector(".find-state").addEventListener("click",findMyState)
+const textChange=()=>{
+    let button=document.getElementById("textChange");
+    button.innerText="Don't Get Lost Again!!!";
+};
+document.querySelector(".find-state").addEventListener("click",findMyState);
+document.querySelector(".find-state").addEventListener("click",textChange);

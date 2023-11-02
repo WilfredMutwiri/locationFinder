@@ -40,3 +40,13 @@ button:hover{
     width: 30px;
     color: blue;
 }
+
+@media (max-width:600px) {
+    .container{
+        width:90%;
+    }
+    button{
+        width: 200px;
+        padding:2px;
+    }
+}
